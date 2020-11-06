@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Note Taker</title>
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <h1>Note Taker</h1>
+    <h2>Add a New Note:</h2>
+
+    <div class="container">
+        <div class="box">
+    Note: <textarea id='note' placeholder="Write your note here"></textarea><br>
+    <button type="button" id='button' onclick="addNote()">Add Note</button>
+    
+    
+        <div id="saida">No notes added yet!</div>
+
+        <div id="modal">
+            <div id="modal-container">
+                <span id="close">&times;</span>                
+            </div>
+        </div>
+    </div>
+</div>
+        
+    
+</body>
+</html>
