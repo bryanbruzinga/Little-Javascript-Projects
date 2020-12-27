@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  width: 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.header {
+  width: 50vw;
+  height: 230px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background: white;
+}
+.botoes {
+  margin-top: 10px;
+}
+
+.botoes button {
+  cursor: pointer;
+  padding: 12px;
+  margin: 10px;
+  width: 8rem;
+}
+.header {
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.add {
+  background-color: #ccc;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.centralize {
+  display: grid;
+  width: 50vw;
+  margin-top: 50px;
+}
+.lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.lista p {
+  margin-left: 20px;
+}
+.btn-lista {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-lista button {
+  border: 1px solid blue;
+}
+
+@media (max-width: 650px) {
+  .header {
+    width: 100%;
+  }
+  .centralize {
+    width: 100%;
+  }
+}
