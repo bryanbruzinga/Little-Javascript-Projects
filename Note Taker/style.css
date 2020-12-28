@@ -1,0 +1,130 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  color: green;
+}
+.container {
+  width: 100vw;
+  height: 310px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 800px;
+  height: 280px;
+  background: #fff;
+}
+
+textarea {
+  width: 90%;
+  height: 30%;
+  padding: 10px;
+  text-align: center;
+}
+button {
+  border: 3px solid #009900;
+  background-color: green;
+  border-radius: 8px;
+  color: white;
+  transition: 0.3s;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+#button {
+  margin: 5px 0px 5px 0px;
+  text-align: center;
+  margin-left: 43%;
+  opacity: 0.6;
+}
+#button:hover {
+  opacity: 1;
+}
+#saida {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.noteList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  width: 350px;
+  background-color: rgb(226, 223, 223);
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 20px;
+  opacity: 0.7;
+}
+.noteList:hover {
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#modal.ativo {
+  display: block;
+}
+
+#modal-container {
+  display: flex;
+  background-color: #fefefe;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#close {
+  display: block;
+  color: #aaa;
+  order: 2;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.removeItem {
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 943px) {
+  .container {
+    width: 100%;
+  }
+}
